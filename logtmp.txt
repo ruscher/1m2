@@ -1,0 +1,2 @@
+Data: 25/04/2018 13:48:32 | IP: 191.129.112.85 | host: 191.129.112.85 | Pagina Acessada: /1m2/index.php | Navegador: Mozilla/5.0 (iPhone; CPU iPhone OS 11_2_6 like Mac OS X) AppleWebKit/604.1.34 (KHTML, like Gecko) CriOS/65.0.3325.152 Mobile/15D100 Safari/604.1 
+Data: 25/04/2018 13:56:58 | IP: 191.129.112.85 | host: 191.129.112.85 | Pagina Acessada: /1m2/index.php | Navegador: Mozilla/5.0 (iPhone; CPU iPhone OS 11_2_6 like Mac OS X) AppleWebKit/604.1.34 (KHTML, like Gecko) CriOS/65.0.3325.152 Mobile/15D100 Safari/604.1 
