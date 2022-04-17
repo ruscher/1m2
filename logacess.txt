@@ -1,0 +1,1 @@
+Data: 17/04/2022 05:28:48 | login: rafael |  IP: 127.0.0.1 | host: localhost | Pagina Acessada: /1m2/login_db.php | Navegador: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 

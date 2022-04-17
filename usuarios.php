@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="iso-8859-1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <title>1m² |  Plataforma Imobiliária</title>
+
+        <link href="css/font-awesome.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/simple-line-icons.css" rel="stylesheet">
+        <link href="css/jquery-ui.css" rel="stylesheet">
+        <link href="css/datepicker.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/app.css" rel="stylesheet">
+        
+    	<link rel="stylesheet" href="css/jquery.gritter.css" />
+        
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+    </head>
+    <body class="notransition">
+    
+		<?php include 'inc_page_top.php'; ?>
+        <?php include 'inc_menu_lateral.php'; ?>
+        <?php //include 'inc_main.php'; ?>
+        <!-- INICIO DIV WRAPPER -->
+        <div id="wrapper" class="full">
+            <div id="mapView" class="min"><div class="mapPlaceholder"><span class="fa fa-spin fa-spinner"></span> Carregando mapa...</div></div>
+            <!-- INICIO DIV CONTENT -->
+			<div id="content" class="max">
+            	<!-- INICIO DIV WIDGETS -->
+				<div class="widgets">
+					<!-- INICIO  -->
+                    <ol class="breadcrumb">
+                        <li><a href="#"><span class="icon-home"></span> Início</a></li>
+                        <li><a href="#"><span class="icon-notebook"></span> Contatos</a></li>
+                        <li><a href="#"><span class="icon-users"></span> Usuários</a></li>
+                    </ol>
+                    <h4>Usuários</h4>
+                    <div class="row">
+                    
+                               
+                          <div class="col-xs-12">
+                            <div class="table-overflow">
+                               
+                               
+                           		<table class="table" id="inboxTable">
+									<thead>
+										<tr>
+											<th style="width:10px;"><input type="checkbox"></th>
+											<th style="width:10px;"><span class="fa fa-star-o"></span></th>
+											<th>
+												<span class="fa fa-sort sortIcon"></span>
+												<span class="fa fa-caret-up sortIconAsc"></span>
+												<span class="fa fa-caret-down sortIconDesc"></span> NOME
+											</th>
+											<th>
+												<span class="fa fa-sort sortIcon"></span>
+												<span class="fa fa-caret-up sortIconAsc"></span>
+												<span class="fa fa-caret-down sortIconDesc"></span> TELEFONE
+											</th>
+											<th>
+												<span class="fa fa-sort sortIcon"></span>
+												<span class="fa fa-caret-up sortIconAsc"></span>
+												<span class="fa fa-caret-down sortIconDesc"></span> USUÁRIO
+											</th>
+											<th>
+												<span class="fa fa-sort sortIcon"></span>
+												<span class="fa fa-caret-up sortIconAsc"></span>
+												<span class="fa fa-caret-down sortIconDesc"></span> DATA
+											</th>
+											<th>
+												<span class="fa fa-sort sortIcon"></span>
+												<span class="fa fa-caret-up sortIconAsc"></span>
+												<span class="fa fa-caret-down sortIconDesc"></span> STATUS
+											</th>
+											<th style="width:100px;">AÇÃO</th>
+										</tr>
+									</thead>
+                                    <tbody class="table">
+                                        <tr>
+											<td><input type="checkbox"></td>
+											<td><span class="fa fa-star-o text-yellow"></span></td>
+                                            <td><span class="userName">John Smith</span></td>
+                                            <td>(61) 99942-3805</td>  
+                                            <td>Rafael Ruscher</td>                                          
+                                            <td>Janeiro 13, 2017</td>
+                                            <td><span class="label label-danger">SUSPENSO</span></td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <a class="btn btn-xs btn-round btn-o btn-green dropdown-toggle" data-toggle="dropdown"><span class="fa fa-pencil"></span> Editar</a>
+                                                    <ul class="dropdown-menu pull-right" role="menu">
+                                                        <li><a href="#">Editar</a></li>
+                                                        <li><a href="#">Transferir</a></li>
+                                                        <li><a href="#">Histórico</a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="#">Cadastrar</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+											<td><input type="checkbox"></td>
+											<td><span class="fa fa-star-o text-yellow"></span></td>
+                                            <td><span class="userName">Jane Smith</span></td>
+                                            <td>(61) 99942-3805</td>  
+                                            <td>Rafael Ruscher</td>                                          
+                                            <td>Janeiro 13, 2017</td>
+                                            <td><span class="label label-success">ATIVADO</span></td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <a class="btn btn-xs btn-round btn-o btn-green dropdown-toggle" data-toggle="dropdown"><span class="fa fa-pencil"></span> Editar</a>
+                                                    <ul class="dropdown-menu pull-right" role="menu">
+                                                        <li><a href="#">Editar</a></li>
+                                                        <li><a href="#">Transferir</a></li>
+                                                        <li><a href="#">Histórico</a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="#">Cadastrar</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+											<td><input type="checkbox"></td>
+											<td><span class="fa fa-star-o text-yellow"></span></td>
+                                            <td><span class="userName">Rust Cohle</span></td>
+                                            <td>(61) 99942-3805</td>  
+                                            <td>Rafael Ruscher</td>                                          
+                                            <td>Janeiro 13, 2017</td>
+                                            <td><span class="label label-warning">DESATIVADO</span></td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <a class="btn btn-xs btn-round btn-o btn-green dropdown-toggle" data-toggle="dropdown"><span class="fa fa-pencil"></span> Editar</a>
+                                                    <ul class="dropdown-menu pull-right" role="menu">
+                                                        <li><a href="#">Editar</a></li>
+                                                        <li><a href="#">Transferir</a></li>
+                                                        <li><a href="#">Histórico</a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="#">Cadastrar</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+											<td><input type="checkbox"></td>
+											<td><span class="fa fa-star-o text-yellow"></span></td>
+                                            <td><span class="userName">Antony Iglesias</span></td>
+                                            <td>(61) 99942-3805</td>  
+                                            <td>Rafael Ruscher</td>                                          
+                                            <td>Janeiro 13, 2017</td>
+                                            <td><span class="label label-info">PEDENTE</span></td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <a class="btn btn-xs btn-round btn-o btn-green dropdown-toggle" data-toggle="dropdown"><span class="fa fa-pencil"></span> Editar</a>
+                                                    <ul class="dropdown-menu pull-right" role="menu">
+                                                        <li><a href="#">Editar</a></li>
+                                                        <li><a href="#">Transferir</a></li>
+                                                        <li><a href="#">Histórico</a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="#">Cadastrar</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+											<td><input type="checkbox"></td>
+											<td><span class="fa fa-star-o text-yellow"></span></td>
+                                            <td><span class="userName">John Smith</span></td>
+                                            <td>(61) 99942-3805</td>  
+                                            <td>Matheus Ruscher</td>                                          
+                                            <td>Janeiro 13, 2017</td>
+                                            <td><span class="label label-danger">SUSPENSO</span></td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <a class="btn btn-xs btn-round btn-o btn-green dropdown-toggle" data-toggle="dropdown"><span class="fa fa-pencil"></span> Editar</a>
+                                                    <ul class="dropdown-menu pull-right" role="menu">
+                                                        <li><a href="#">Editar</a></li>
+                                                        <li><a href="#">Transferir</a></li>
+                                                        <li><a href="#">Histórico</a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="#">Cadastrar</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+											<td><input type="checkbox"></td>
+											<td><span class="fa fa-star-o text-yellow"></span></td>
+                                            <td><span class="userName">Jane Smith</span></td>
+                                            <td>(61) 99942-3805</td>  
+                                            <td>Rafael Ruscher</td>                                          
+                                            <td>Janeiro 13, 2017</td>
+                                            <td><span class="label label-success">ATIVADO</span></td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <a class="btn btn-xs btn-round btn-o btn-green dropdown-toggle" data-toggle="dropdown"><span class="fa fa-pencil"></span> Editar</a>
+                                                    <ul class="dropdown-menu pull-right" role="menu">
+                                                        <li><a href="#">Editar</a></li>
+                                                        <li><a href="#">Transferir</a></li>
+                                                        <li><a href="#">Histórico</a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="#">Cadastrar</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+											<td><input type="checkbox"></td>
+											<td><span class="fa fa-star-o text-yellow"></span></td>
+                                            <td><span class="userName">Rust Cohle</span></td>
+                                            <td>(61) 99942-3805</td>  
+                                            <td>Rafael Ruscher</td>                                          
+                                            <td>Janeiro 13, 2017</td>
+                                            <td><span class="label label-warning">DESATIVADO</span></td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <a class="btn btn-xs btn-round btn-o btn-green dropdown-toggle" data-toggle="dropdown"><span class="fa fa-pencil"></span> Editar</a>
+                                                    <ul class="dropdown-menu pull-right" role="menu">
+                                                        <li><a href="#">Editar</a></li>
+                                                        <li><a href="#">Transferir</a></li>
+                                                        <li><a href="#">Histórico</a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="#">Cadastrar</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+											<td><input type="checkbox"></td>
+											<td><span class="fa fa-star-o text-yellow"></span></td>
+                                            <td><span class="userName">Antony Iglesias</span></td>
+                                            <td>(61) 99942-3805</td>  
+                                            <td>Rafael Ruscher</td>                                          
+                                            <td>Janeiro 13, 2017</td>
+                                            <td><span class="label label-info">PEDENTE</span></td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <a class="btn btn-xs btn-round btn-o btn-green dropdown-toggle" data-toggle="dropdown"><span class="fa fa-pencil"></span> Editar</a>
+                                                    <ul class="dropdown-menu pull-right" role="menu">
+                                                        <li><a href="#">Editar</a></li>
+                                                        <li><a href="#">Transferir</a></li>
+                                                        <li><a href="#">Histórico</a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="#">Cadastrar</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+											<td><input type="checkbox"></td>
+											<td><span class="fa fa-star-o text-yellow"></span></td>
+                                            <td><span class="userName">John Smith</span></td>
+                                            <td>(61) 99942-3805</td>  
+                                            <td>Rafael Ruscher</td>                                          
+                                            <td>Janeiro 13, 2017</td>
+                                            <td><span class="label label-danger">SUSPENSO</span></td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <a class="btn btn-xs btn-round btn-o btn-green dropdown-toggle" data-toggle="dropdown"><span class="fa fa-pencil"></span> Editar</a>
+                                                    <ul class="dropdown-menu pull-right" role="menu">
+                                                        <li><a href="#">Editar</a></li>
+                                                        <li><a href="#">Transferir</a></li>
+                                                        <li><a href="#">Histórico</a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="#">Cadastrar</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+											<td><input type="checkbox"></td>
+											<td><span class="fa fa-star-o text-yellow"></span></td>
+                                            <td><span class="userName">Jane Smith</span></td>
+                                            <td>(61) 99942-3805</td>  
+                                            <td>Rafael Ruscher</td>                                          
+                                            <td>Janeiro 13, 2017</td>
+                                            <td><span class="label label-success">ATIVADO</span></td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <a class="btn btn-xs btn-round btn-o btn-green dropdown-toggle" data-toggle="dropdown"><span class="fa fa-pencil"></span> Editar</a>
+                                                    <ul class="dropdown-menu pull-right" role="menu">
+                                                        <li><a href="#">Editar</a></li>
+                                                        <li><a href="#">Transferir</a></li>
+                                                        <li><a href="#">Histórico</a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="#">Cadastrar</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+											<td><input type="checkbox"></td>
+											<td><span class="fa fa-star-o text-yellow"></span></td>
+                                            <td><span class="userName">Rust Cohle</span></td>
+                                            <td>(61) 99942-3805</td>  
+                                            <td>Rafael Ruscher</td>                                          
+                                            <td>Janeiro 13, 2017</td>
+                                            <td><span class="label label-warning">DESATIVADO</span></td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <a class="btn btn-xs btn-round btn-o btn-green dropdown-toggle" data-toggle="dropdown"><span class="fa fa-pencil"></span> Editar</a>
+                                                    <ul class="dropdown-menu pull-right" role="menu">
+                                                        <li><a href="#">Editar</a></li>
+                                                        <li><a href="#">Transferir</a></li>
+                                                        <li><a href="#">Histórico</a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="#">Cadastrar</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+											<td><input type="checkbox"></td>
+											<td><span class="fa fa-star-o text-yellow"></span></td>
+                                            <td><span class="userName">Antony Iglesias</span></td>
+                                            <td>(61) 99942-3805</td>  
+                                            <td>Rafael Ruscher</td>                                          
+                                            <td>Janeiro 13, 2017</td>
+                                            <td><span class="label label-info">PEDENTE</span></td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <a class="btn btn-xs btn-round btn-o btn-green dropdown-toggle" data-toggle="dropdown"><span class="fa fa-pencil"></span> Editar</a>
+                                                    <ul class="dropdown-menu pull-right" role="menu">
+                                                        <li><a href="#">Editar</a></li>
+                                                        <li><a href="#">Transferir</a></li>
+                                                        <li><a href="#">Histórico</a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="#">Cadastrar</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <ul class="pagination">
+                                <li class="disabled"><a href="#"><span class="fa fa-angle-left"></span></a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#"><span class="fa fa-angle-right"></span></a></li>
+                            </ul>
+                        </div>
+
+    
+
+           
+                    </div>
+                    <!-- FIM  -->
+                    
+                </div>
+        		<?php include 'inc_page_down.php'; ?>
+            	<!-- FIM DIV WIDGETS -->
+            </div>
+            <!-- FIM DIV CONTENT -->
+            <div class="clearfix"></div>
+        </div>             
+        <!-- FIM DIV WRAPPER -->
+        
+    
+		<script src="js/json2.js"></script>
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/underscore.js"></script>
+        <script src="js/moment-2.5.1.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery-ui-touch-punch.js"></script>
+        <script src="js/jquery.placeholder.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/jquery.touchSwipe.min.js"></script>
+        <script src="js/jquery.slimscroll.min.js"></script>
+        <script src="js/jquery.visible.js"></script>
+        <script src="http://maps.googleapis.com/maps/api/js?sensor=true&amp;libraries=geometry&amp;libraries=places" type="text/javascript"></script>
+        <script src="js/infobox.js"></script>
+        <script src="js/clndr.js"></script>
+        <script src="js/jquery.tagsinput.min.js"></script>
+        <script src="js/bootstrap-datepicker.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/calendar.js"></script>  
+        <?php include 'inc_busca_autocomptext.php'; ?>  
+		<script src="js/jquery.gritter.min.js"></script>
+        <?php include 'inc_notificacao_gritter.php'; ?>
+        
+        
+        <script src="js/tablesorter.js"></script>
+        <script src="js/table.js"></script>
+        
+    </body>
+</html>
